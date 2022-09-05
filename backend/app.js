@@ -5,10 +5,13 @@ const cors = require("cors");
 
 const app = express();
 
-app.use(express.json());
-app.use(cors());
 const { userLogin, userSignup } = require("./controllers/user");
 const { router } = require("./routes/posts");
+
+
+app.use(express.json());
+app.use(cors());
+
 app.use("/posts", router);
 app.use("/images", express.static("images"));
 

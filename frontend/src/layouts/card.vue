@@ -117,7 +117,7 @@ export default{
         <div class="card-header ">
             <i class="bi bi-person-circle"></i>
             <span>{{ user }}</span>
-            <i v-if="userLogged === user || userLogged === 'david@gmail.com'" @click="deletePost" class="bi bi-x-circle delete"></i>
+            <i v-if="userLogged === user || userLogged === 'allounedavid@gmail.com'" @click="deletePost" class="bi bi-x-circle delete"></i>
         </div>
         <img class="card-img-bottom" v-if="url" :src="url"/>
     <div class="card-body">
